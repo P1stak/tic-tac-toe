@@ -123,17 +123,18 @@ namespace test
 
         public void PrintArray()
         {
+            int c = 1;
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int k = 0; k < array.GetLength(1); k++)
                 {
                     if (array[i, k] == 0)
-                        Console.Write(" - ");
+                        Console.Write($" {c} "); ;
                     if (array[i, k] == 1)
                         Console.Write(" X ");
                     if (array[i, k] == 2)
                         Console.Write(" O ");
-
+                    c++;
 
                 }
                 Console.WriteLine();
